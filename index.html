@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Logomarca.png" type="icon">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <title>AutoPost</title>
+</head>
+<body>
+    <div class="main"> 
+        <div class="left">  
+            <header>
+                <h1>AutoPost Facebook</h1>
+            </header>
+            <div class="box-text"> <!-- Caixa de texto-->
+                <input type="text" placeholder="Escreva seu texto aqui!">
+                <div class="botoes-imagens"> <!--DIV inutil?-->
+                 <div class="container">  
+                     <div class="botao-imagem">     
+                        <img src="img/Link.png"  id="botaoImagem" alt="Link"width="50px" height="50px">
+                        <input type="text" id="campoLink" class="campo-link-oculto" placeholder="Digite o link AQUI!">
+                     </div>
+                    </div>
+                    <div class="fotos-icon"> 
+                        <input type="file" accept="image/*" id="fotos-icon">
+                            <label for="fotos-icon">               
+                                <img src="img/foto.png" alt="Selecionar Imagem">
+                            </label> 
+                    <button class="video">
+                        <img class="video"src="img/video.png" width="50px" height="50px"> 
+                    </button>
+                    <div class="delay">
+                        <label for="delay">Delay (Recomendamos 10s)</label>
+                        <input type="number" name="Delay" id="delay" value="6" min="6">
+                    </div>
+                    
+                </div>
+                <div class="botao-post">
+                    <button id='botaoPost'>Post</button>
+                    <button id="botao-Facebook">Facebook</button>
+                </div>
+                <div>
+                    <footer class="rodape">
+                        Copyright AutoPost interprise(exempru)
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
