@@ -34,7 +34,7 @@ app.on('ready',()=>{
                         console.log("DOMContentLoaded evento disparado"); // Verifique se esse log aparece no console
                         console.log(imagemLink); // Verifique se o elemento da imagem é selecionado corretamente
                         console.log("Clique na imagem!"); // Verifique se esse log aparece quando você clica na imagem
-                        
+                        /*Teste Git*/
 
                     });
               
