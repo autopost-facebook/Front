@@ -11,46 +11,37 @@
 </head>
 <body>
     <main>
-    <div class="main"> 
-        <div class="left">  
-            <header>
-                <h1>AutoPost Facebook</h1>
-            </header>
-            <div class="box-text"> <!-- Caixa de texto-->
-                <input type="text" placeholder="Escreva seu texto aqui!">
-                <div class="botoes-imagens"> <!--DIV inutil?-->
-                 <div class="container">  
-                     <div class="botao-imagem">     
-                        <img src="img/Link.png"  id="botaoImagem" alt="Link"width="50px" height="50px">
-                        <input type="text" id="campoLink" class="campo-link-oculto" placeholder="Digite o link AQUI!">
-                     </div>
+            <div class="left">  
+                <div class="titulo">
+                    <header>
+                        <h1>AutoPost Facebook</h1>
+                    </header>
+                </div>
+                <div class="caixa-de-texto">
+                    <form>
+                        <textarea placeholder="Digite sua mensagem!" cols="30" rows="10"></textarea>
+                    </form>
+                </div>  
+                <div class="caixa-de-link"> 
+                    <input type="text" placeholder="Insira um link(Opcional)*">
+                </div>
+                    <div>
+                        <button type="button" class="botao-link">
+                            <img src="/img/link.png" width="50px" height="50px">
+                        </button>   
+                            <button type="button" class="botao-imagem">
+                                <img src="img/foto.png" width="50px" height="50px">
+                            </button>
+                                <button type="button" class="botao-video">
+                                    <img src="img/video.png" width="50px" height="50px">
+                                </button>
+                                <div class="botao delay">
+                                    <label> Delay (Recomendamos 10s)</label>
+                                    <input type="number" value="6" min="6">
+                                </div>
                     </div>
-                    <div class="fotos-icon"> 
-                        <input type="file" accept="image/*" id="fotos-icon">
-                            <label for="fotos-icon">               
-                                <img src="img/foto.png" alt="Selecionar Imagem">
-                            </label> 
-                    <button class="video">
-                        <img class="video"src="img/video.png" width="50px" height="50px"> 
-                    </button>
-                    <div class="delay">
-                        <label for="delay">Delay (Recomendamos 10s)</label>
-                        <input type="number" name="Delay" id="delay" value="6" min="6">
-                    </div>
-                    
-                </div>
-                <div class="botao-post">
-                    <button id='botaoPost'>Post</button>
-                    <button id="botao-Facebook">Facebook</button>
-                </div>
-                <div>
-                    <footer class="rodape">
-                        Copyright AutoPost interprise(exemplo comer pastel2.0)
-                    </footer>
-                </div>
             </div>
-        </div>
-    </div>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
